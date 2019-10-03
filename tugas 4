@@ -1,0 +1,65 @@
+#include <iostream>
+#include <String>
+using namespace std;
+
+int main ()
+
+int belanja;
+int batas_belanja = 3102019
+int harga;
+
+cout<<"\nMasukan Status Anda (Menikah 'M' atau Belum Menikah 'B')= ";
+string status;
+cin>> status;
+cout<<"\nApakah Anda Sudah Mempunyai Anak (Ya atau Tidak)= ";
+String anak;
+cin>> anak;
+cout<<"nApakah Anda Mempunyai Kartu Anggota (Ya atau Tidak)= ";
+String kartu_anggota;
+cin>> kartu_anggota;
+cout,<"\nNilai Total Belanja Anda)= ";
+cin>> belanja;
+
+if (status == "M" && belanja >-batas_belanja)
+{
+if (anak=="Ya")
+{
+
+cout<< "\nDiskon 50%"<<endl;
+harga=belanja- (belanja * 0.50);
+}
+else
+{
+cout<<"\nDiskon 25%<<endl;
+}
+}
+else
+{
+if (kartu_anggota == "Ya" && balanja>=batas_belanja)
+{
+cout<< "\nDiskon 25%"<<endl;
+harga belanja= belanja-(belanja*0,25);
+}
+else{
+harga = belanja;
+}
+}
+
+
+
+cout<<"\nTotal Yang Harus di Bayar adalah RP."<<harga<<endl;
+cout<<"\nApakah Anda Berasal Dari Makassar (YA atau Tidak) =";
+String asal;
+String cin>> asal;
+
+if (asal=="Tidak")
+{
+cout << "\nAnda Mendapatkan Tambahan Diskon 20%;
+harga = harga- (harga * 0,20);
+}
+harga=harga;
+}
+cout<<"Harga Keseluruhan Dari Total Belanja Anda Adalah RP."<<harga<<endl;
+cout<<"Sampai Jumpa Kembali"<<endl;
+return 0;
+}
